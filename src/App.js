@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+// means if you any name the Greet will print here
+// import HelloMsg from './components/Greet';
+//if we use a (a named export ) we should write the same name in component 
+import  {Greet}  from './components/Greet'; 
 
+import Welcome from './components/Welcome';
+
+import Hello from './components/Hello';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Greet />
+      <Welcome />
+      <Hello />
     </div>
   );
 }
